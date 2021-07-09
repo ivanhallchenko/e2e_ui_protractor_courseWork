@@ -1,14 +1,18 @@
 const getRandomEmail = require("../helpers/getRandomEmail");
 
-const testDataCourseWork = {
+const testDataRegister = {
   firstName: "Tester",
   lastName: "Testing",
   fullName: "Tester Testing",
   phoneNumber: "123123123",
-  email: getRandomEmail(),
-  popupText: "¡Gracias por registrarse!"
+  email: getRandomEmail()
+}
+const popupTexts = {
+  popupTextES: "¡Gracias por registrarse!",
+  popupTextEN: "EN TEST",
 }
 
-module.exports = testDataCourseWork;
+module.exports = {testDataRegister, popupTexts};
+//module.exports = popupTexts;
 
 
